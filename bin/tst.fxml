@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="canvas" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="748.0" prefWidth="1046.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneTest">
+  <children>
+    <Pane id="cavnas" prefHeight="600.0" prefWidth="945.0">
+      <children>
+            <AnchorPane layoutX="22.0" layoutY="286.0">
+               <children>
+              <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="2.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="@penta.png" />
+                </image>
+              </ImageView>
+              <ImageView id="trglImg" fx:id="lineImg" fitHeight="25.0" fitWidth="25.0" layoutX="3.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="@line.png" />
+                </image>
+              </ImageView>
+              <ImageView fx:id="rectImg" fitHeight="25.000091552734375" fitWidth="25.000091552734375" layoutX="3.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="@rectangle.png" />
+                </image>
+              </ImageView>
+              <ImageView fx:id="trglImg" fitHeight="25.0" fitWidth="25.0" layoutX="36.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="@trngl.png" />
+                </image>
+              </ImageView>
+              <ImageView id="trglImg" fitHeight="25.0" fitWidth="25.0" layoutX="36.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="@ellipse.png" />
+                </image>
+              </ImageView>
+              <ImageView id="trglImg" fitHeight="25.0" fitWidth="25.0" layoutX="36.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="@rhombus.png" />
+                </image>
+              </ImageView>
+              <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="36.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="@delete.png" />
+                </image>
+              </ImageView>
+              <ImageView id="trglImg" fitHeight="25.0" fitWidth="25.0" layoutX="2.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="@move.png" />
+                </image>
+              </ImageView>
+              <ImageView id="trglImg" fitHeight="25.0" fitWidth="25.0" layoutX="3.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="@fillColor.png" />
+                </image>
+              </ImageView>
+              <ImageView id="trglImg" fitHeight="25.0" fitWidth="25.0" layoutX="36.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="@fillStroke.png" />
+                </image>
+              </ImageView>
+              <Button id="btn" fx:id="selectBtn" blendMode="MULTIPLY" layoutX="33.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeStroke" prefHeight="30.0" prefWidth="30.000099999997474" text="">
+                <tooltip>
+                  <Tooltip text="FIll stroke" />
+                </tooltip>
+              </Button>
+              <Button id="btn" fx:id="moveBtn" blendMode="MULTIPLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#moveAction" prefHeight="30.0" prefWidth="30.0" text="">
+                <tooltip>
+                  <Tooltip text="Move" />
+                </tooltip>
+              </Button>
+              <Button id="btn" fx:id="deleteButton" blendMode="MULTIPLY" layoutX="33.0" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#removeBtnAction" prefHeight="30.0" prefWidth="30.000099999997474" text="">
+                <tooltip>
+                  <Tooltip text="Delete" />
+                </tooltip>
+              </Button>
+              <Button id="btn" fx:id="fillColorBtn" blendMode="MULTIPLY" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#fillColorBtnAction" prefHeight="30.0" prefWidth="30.0" text="">
+                <tooltip>
+                  <Tooltip text="Fill shape" />
+                </tooltip>
+              </Button>
+              <Button id="btn" fx:id="triangleBtn" blendMode="MULTIPLY" layoutX="33.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#trinangleBtnAction" opacity="1.0" prefHeight="30.0" prefWidth="30.0" text="">
+                <tooltip>
+                  <Tooltip text="Triangle" />
+                </tooltip>
+              </Button>
+              <Button id="btn" fx:id="lineBtn" blendMode="MULTIPLY" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#lineBtnAction" prefHeight="30.0" prefWidth="30.0" text="">
+                <tooltip>
+                  <Tooltip text="Line" />
+                </tooltip>
+              </Button>
+              <Button id="btn" fx:id="rhombusBtn" blendMode="MULTIPLY" layoutX="33.0" layoutY="114.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#rhombusBtnAction" prefHeight="30.0" prefWidth="30.000099999997474" text="">
+                <tooltip>
+                  <Tooltip text="Rhombus" />
+                </tooltip>
+              </Button>
+              <Button id="btn" fx:id="rectBtn" blendMode="MULTIPLY" layoutY="114.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#rectBtnAction" prefHeight="30.0" prefWidth="30.0" text="">
+                <tooltip>
+                  <Tooltip text="Rectangle" />
+                </tooltip>
+              </Button>
+              <Button id="btn" fx:id="ellipseBtn" blendMode="MULTIPLY" layoutX="33.0" layoutY="152.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ellipseBtnAction" prefHeight="30.0" prefWidth="30.000099999997474" text="">
+                <tooltip>
+                  <Tooltip text="Ellipse" />
+                </tooltip>
+              </Button>
+              <Button id="btn" fx:id="pentaBtn" blendMode="MULTIPLY" layoutY="152.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#pentaBtnAction" prefHeight="30.0" prefWidth="30.0" text="">
+                <tooltip>
+                  <Tooltip text="Pentagonal" />
+                </tooltip>
+              </Button>
+               </children>
+            </AnchorPane>
+        <TitledPane animated="false" layoutX="0.0" layoutY="0.0" prefHeight="124.0" prefWidth="1046.0" text="">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="98.0" prefWidth="1070.0">
+              <children>
+                <Button fx:id="saveBtn" layoutX="43.0" layoutY="8.0" mnemonicParsing="false" onAction="#saveDrawing" prefHeight="30.0" prefWidth="66.0" text="Save" />
+                <Button fx:id="openBtn" layoutX="43.0" layoutY="41.0" mnemonicParsing="false" onAction="#openDrawing" prefHeight="30.0" prefWidth="66.0" text="Open" />
+                <TextField fx:id="setWidth" layoutX="180.0" layoutY="4.0" prefHeight="0.0" prefWidth="66.0" />
+                <TextField fx:id="setHeight" layoutX="180.0" layoutY="33.0" prefHeight="5.0" prefWidth="66.0" />
+                <Label layoutX="164.0" layoutY="7.0" text="W" />
+                <Label layoutX="164.0" layoutY="40.0" text="H" />
+                <Label layoutX="250.0" layoutY="7.0" text="Px" />
+                <Label layoutX="250.0" layoutY="40.0" text="Px" />
+                <ColorPicker fx:id="colorPicker" layoutX="399.0" layoutY="21.0" onAction="#setColor" />
+                <Button fx:id="helpBtn" layoutX="974.0" layoutY="20.0" mnemonicParsing="false" onAction="#help" prefHeight="23.0" prefWidth="50.0" text="About" />
+                <Label layoutX="59.0" layoutY="77.0" opacity="0.6" text="Options">
+                  <font>
+                    <Font size="10.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <Label font="$x1" layoutX="187.0" layoutY="77.0" opacity="0.6" text="Dimensions" />
+                <Label font="$x1" layoutX="422.0" layoutY="77.0" opacity="0.6" text="Colors" />
+                <Label font="$x1" layoutX="985.0" layoutY="62.0" opacity="0.6" text="Others" />
+                        <Button fx:id="resize" layoutX="270.0" layoutY="22.0" mnemonicParsing="false" onAction="#resize" prefHeight="23.0" prefWidth="50.0" text="set size">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+              </children>
+            </AnchorPane>
+          </content>
+        </TitledPane>
+        <Pane fx:id="canvas" layoutX="103.0" layoutY="134.0" prefHeight="579.0" prefWidth="920.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" />
+      </children>
+    </Pane>
+  </children>
+</Pane>
