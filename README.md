@@ -1,3 +1,3 @@
-# SWE-205 course project 
+#🎨 SWE-205 course project 
 
-🎨 A painting desktop app made with Java & JavaFX
+A painting desktop app made with Java & JavaFX
